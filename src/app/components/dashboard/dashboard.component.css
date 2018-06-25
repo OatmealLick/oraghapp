@@ -1,0 +1,20 @@
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.event-wrapper {
+  margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

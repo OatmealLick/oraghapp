@@ -1,0 +1,9 @@
+$my-theme-primary: mat-palette($mat-green);
+$my-theme-accent: mat-palette($mat-red);
+$my-theme-warn: mat-palette($mat-deep-orange, A200);
+
+$agh-theme: mat-dark-theme(
+    $my-theme-primary,
+    $my-theme-accent,
+    $my-theme-warn
+);

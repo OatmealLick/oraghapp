@@ -1,0 +1,27 @@
+.event {
+  padding: 10px;
+  text-align: left;
+}
+
+.location-date {
+  font-style: italic;
+}
+
+.button-row {
+  padding: 10px;
+}
+
+.button-column {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.button-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+}

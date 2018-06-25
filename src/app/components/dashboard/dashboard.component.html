@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="column left-column">
+    <div class="mat-h2">NOWE WYDARZENIA</div>
+    <div class="event-wrapper" *ngFor="let event of futureEvents.keys()">
+      <app-event *ngIf="isEventOfDecision(event, decision.TO_BE_DETERMINED)"
+                 [event]="event" (changedDecision)="handleEventUpdate($event)"></app-event>
+    </div>
+  </div>
+  <div class="column middle-column">
+    <div class="mat-h2">NA NICH BĘDĘ</div>
+    <div class="event-wrapper" *ngFor="let event of futureEvents.keys()">
+      <app-event *ngIf="isEventOfDecision(event, decision.GOING)"
+                 [event]="event" (changedDecision)="handleEventUpdate($event)"></app-event>
+    </div>
+  </div>
+  <div class="column right-column">
+    <div class="mat-h2">NA NICH NIE BĘDĘ</div>
+    <div class="event-wrapper" *ngFor="let event of futureEvents.keys()">
+      <app-event *ngIf="isEventOfDecision(event, decision.NOT_GOING)"
+                 [event]="event" (changedDecision)="handleEventUpdate($event)"></app-event>
+    </div>
+  </div>
+</div>
