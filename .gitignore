@@ -38,4 +38,4 @@ testem.log
 Thumbs.db
 
 #assets
-src/assets
+dist
