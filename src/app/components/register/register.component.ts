@@ -8,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class RegisterComponent implements OnInit {
   logoPath: string = 'assets/oragh-copy.png';
   hidePass: boolean = true;
-  email: string = '';
+  email: string;
 
   constructor() { }
 
   ngOnInit() {
   }
+
 }

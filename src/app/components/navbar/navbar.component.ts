@@ -23,4 +23,12 @@ export class NavbarComponent implements OnInit {
     this.navbarService.hide();
     this.router.navigateByUrl("/home");
   }
+
+  navigateToHistory() {
+    this.router.navigateByUrl("/history");
+  }
+
+  navigateToDashboard() {
+    this.router.navigateByUrl("/dashboard");
+  }
 }

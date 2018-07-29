@@ -7,9 +7,11 @@
 @import "themes/agh-theme";
 
 @import "app/components/home/home.component.scss-theme";
+@import "app/components/past-event/past-event.component.scss-theme";
 
 @mixin custom-components-theme($theme) {
-  @include home-component-theme($theme)
+  @include home-component-theme($theme);
+  @include past-event-component-theme($theme);
 }
 
 .light-theme {

@@ -1,4 +1,4 @@
-.event {
+.event-card {
   padding: 10px;
   text-align: left;
 }
@@ -21,7 +21,4 @@
   content: "";
   display: table;
   clear: both;
-}
-
-.button {
 }

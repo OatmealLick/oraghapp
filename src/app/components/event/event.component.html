@@ -1,10 +1,10 @@
-<div class="event mat-elevation-z2">
+<div class="event-card mat-elevation-z2">
   <div class="mat-h2">{{event.title | uppercase}}</div>
   <div class="location-date mat-body"><span>{{event.location}}, {{event.date | date:'yyyy-MM-dd HH:mm'}}</span></div>
   <div class="mat-body-2">{{event.description}}</div>
   <div class="button-row">
     <div class="button-column">
-      <button (click)="negativeClick()" class="button" mat-raised-button color="warn">NIE BEDE</button>
+      <button (click)="negativeClick()" class="button" mat-raised-button color="accent">NIE BEDE</button>
     </div>
     <div class="button-column">
       <button (click)="positiveClick()" class="button" mat-raised-button color="primary">BEDE</button>

@@ -1,0 +1,9 @@
+.history-container {
+  margin: auto;
+  width: 100%;
+  max-width: 60%;
+}
+
+.history-card {
+  margin: 20px;
+}

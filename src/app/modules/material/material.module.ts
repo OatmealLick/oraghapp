@@ -1,8 +1,14 @@
 import {NgModule} from '@angular/core';
 import {
-  MatButtonModule, MatCardModule, MatFormFieldModule, MatIconModule, MatInputModule,
+  MAT_DIALOG_DEFAULT_OPTIONS,
+  MatButtonModule, MatCardModule, MatDatepickerModule, MatDialog, MatDialogModule, MatDialogRef, MatDividerModule,
+  MatExpansionModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatInputModule, MatNativeDateModule,
   MatToolbarModule
 } from "@angular/material";
+import {AddEventDialogComponent} from "../../components/add-event-dialog/add-event-dialog.component";
 
 @NgModule({
   imports: [
@@ -11,7 +17,11 @@ import {
     MatFormFieldModule,
     MatButtonModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    MatExpansionModule,
+    MatDialogModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
   exports: [
     MatToolbarModule,
@@ -19,8 +29,13 @@ import {
     MatFormFieldModule,
     MatButtonModule,
     MatIconModule,
-    MatInputModule
-  ]
+    MatInputModule,
+    MatExpansionModule,
+    MatDialogModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+  ],
+  entryComponents: [AddEventDialogComponent]
 })
 export class MaterialModule {
 }
